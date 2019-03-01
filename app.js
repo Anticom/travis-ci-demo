@@ -8,11 +8,6 @@ app.get('/', function (req, res) {
 app.get('/add/:a/:b', function (req, res) {
     const sum = parseInt(req.params.a, 10) + parseInt(req.params.b, 10);
     
-    // simulating error
-    if(sum == 7) {
-        return res.json({ sum: 8 });
-    }
-    
     res.json({ sum })
 })
 
