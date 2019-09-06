@@ -13,3 +13,11 @@ $ docker build -t cfm/travis-ci-demo:latest .
 ```sh
 $ docker run --name demo-server --rm -p 3000:3000 cfm/travis-ci-demo
 ```
+
+## Running tests
+
+```sh
+docker run cfm/travis-ci-demo /bin/sh -c "npm run test"
+```
+
+
